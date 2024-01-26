@@ -25,18 +25,31 @@ We has 3 files - train, test, sample. I am going to extract the HR column of the
 Decision Tree:
  Accuracy: 0.9965361458905129
  R squared: 0.9965361458905129
+
+
+ 
 Random Forest:
  Accuracy: 0.9988773982616372
  R squared: 0.9988773982616372
+
+ 
 Support Vector Machine:
  Accuracy: 0.963901328198551
  R squared: 0.963901328198551
+
+ 
 Gradient Boosting
  Accuracy: 0.9980654442704989
+
+ 
 XGBoost Regressor:
  Accuracy: 0.9988792799835
+
+ 
 Linear Regressor:
  R squared: 0.9763005772194225
+
+ 
 Voting Regressor:
  score:0.9975959738698421
 
@@ -47,14 +60,23 @@ After seeing the performance of the each regressor , I am decided to use the ens
 # Comparison of the predictions of the different models on the test data.
 	predictions	actuals
 0	75.296309	75.206050
+
 1	80.744938	80.870132
+
 2	62.242087	62.313063
+
 3	66.366923	66.336924
+
 4	64.315921	64.422596
+
 5	57.028245	56.061095
+
 6	75.045416	75.543673
+
 7	62.453680	62.458281
+
 8	56.819444	56.271876
+
 9	71.237896	71.201501
 
 Though the model is good , As we have some outliers , it can be possible that we have some chances that our model will not work on the outliers, lets see the predictions vs actuals plot for X_test
